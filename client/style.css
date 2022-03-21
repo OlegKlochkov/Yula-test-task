@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2{
+    margin-left: 2%;
+}
+
+#sign{
+    font-size: 12px;
+    text-align: right;
+    margin-right: 2%;
+    align-self: flex-start;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    padding-top: 5%;
+}
+
+.inputAndLabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 50px;
+    position: relative;
+    z-index: 0;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+label{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    visibility: collapse;
+}
+
+input:not(:placeholder-shown) ~label{
+    visibility: initial;
+}
+
+#amountInput{
+    width: 80%;
+
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#sendInput{
+    margin-top: 10px;
+    width: 15%;
+    font-size: 16px;
+    height: 30px;
+}
+
+#banknotesDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#banknotesDiv *{
+    margin: 1%;
+}
+
+.banknote{
+    width: 30%;
+    height: 15%;
+}
+
+#sadSmile{
+    width: 25%;
+}

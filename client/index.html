@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Выдача денег
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Выдача денег из банкомата</h2>
+        <div id="sign">
+            <h3>Тест Юла, стажёр Web-разработчик</h3>
+            <h3>Клочков О.А., 2022</h3>
+        </div>
+    </header>
+    <main>
+        <div class="inputAndLabel">
+            <input type="text" id="amountInput" placeholder="Введите сумму">
+            <label for="amountInput">Введите сумму</label>
+        </div>
+        <button id="sendInput" onclick="makeRequest()">Отправить</button>
+        <div id="banknotesDiv">
+        </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
